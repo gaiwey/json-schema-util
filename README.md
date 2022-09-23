@@ -4,7 +4,7 @@ json-validator-util：
 JsonSchemaUtil provides json schema verification. If the verification is successful, it returns TRUE, and if the verification fails, it returns FALSE.
 
 # 用法:
-用法1：
+### 用法1：
 ```java
 String json = "{\"name\":\"TOM\",\"age\":23,\"declawed\":false,\"description\":\"TOM loves to sleep all day.\"}";
 
@@ -14,7 +14,7 @@ System.out.println(JsonSchemaUtil.validate(json, jsonSchema));
 
 ```
 
-用法2：
+### 用法2：
 ```java
 String json = "{\"name\":\"TOM\",\"age\":23,\"declawed\":false,\"description\":\"TOM loves to sleep all day.\"}";
 
@@ -26,6 +26,14 @@ JsonNode schemaNode = strToJsonNode(jsonSchema);
 
 System.out.println(JsonSchemaUtil.validate(jsonNode, schemaNode));
 ```
+
+# GenerateJsonSchemaUtil
+Class生产Json schema string
+### 用法：
+```java
+GenerateJsonSchemaUtil.classToJsonSchema(MyClass.class, true)
+```
+![img.png](img.png)
 
 # json-schema
 
