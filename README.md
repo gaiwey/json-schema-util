@@ -1,5 +1,4 @@
 # 工程介绍
-json-schema-util：
 验证json是否符合schema格式；
 类生成JSON scheme；
 
